@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'server'
 ]
 
-AUTH_USER_MODEL = 'users.CustomUser'
+# TODO: ДОБАВИТЬ ВОЗМОЖНОСТЬ РАЗДЕЛЬНОЙ АУТЕНТИФИКАЦИИ ДЛЯ ПОКУПАТЕЛЕЙ И ПРОДАВЦОВ
+#AUTH_USER_MODEL = 'users.CustomUser'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
