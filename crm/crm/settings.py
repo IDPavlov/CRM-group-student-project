@@ -40,8 +40,7 @@ INSTALLED_APPS = [
     'server'
 ]
 
-# TODO: ДОБАВИТЬ ВОЗМОЖНОСТЬ РАЗДЕЛЬНОЙ АУТЕНТИФИКАЦИИ ДЛЯ ПОКУПАТЕЛЕЙ И ПРОДАВЦОВ
-#AUTH_USER_MODEL = 'users.CustomUser'
+AUTH_USER_MODEL = 'server.CrmUser'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -78,8 +77,12 @@ WSGI_APPLICATION = 'crm.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'CRM',
+        'USER': 'crm',
+        'PASSWORD': '1111',
+        'HOST': 'localhost',
+        'PORT': 5432
     }
 }
 

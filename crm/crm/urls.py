@@ -15,10 +15,9 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import re_path
-from crm.server import views as server_views
+from django.urls import path
+
 
 urlpatterns = [
-    re_path('^admin\/?$', admin.site.urls),
-    re_path('^manage\/main\/?$', server_views.main, name='manage_main')
+    path('admin/', admin.site.urls),
 ]
