@@ -1,6 +1,6 @@
-from django.http import HttpResponse
+from django.shortcuts import HttpResponse
 
 
-def main(request):
-    return HttpResponse("Hello, CRM!")
+def main_view(request):
+    return HttpResponse('Hey world!')
 

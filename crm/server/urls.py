@@ -1,6 +1,6 @@
 from django.urls import path
-from views import main
+from views import main_view
 
 urlpatterns = [
-    path('manage/main/', main, name='manage_main')
+    path('', main_view, name='manage_main')
 ]
