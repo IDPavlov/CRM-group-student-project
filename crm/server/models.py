@@ -8,10 +8,11 @@ class Role(models.Model):
 
 
 class CrmUser(AbstractUser):
-    job = models.ForeignKey(Role, on_delete=models.CASCADE)
+    role = models.ForeignKey(Role, on_delete=models.CASCADE, default=Role.objects.get(name='seller'))
 
     def __str__(self):
         return self.username
+
 
 
 class Product(models.Model):

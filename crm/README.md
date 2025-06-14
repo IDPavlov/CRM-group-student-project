@@ -11,3 +11,5 @@
 - 'pip install -r requirements.txt' - установка зависимостей
 - 'python manage.py migrate' - применение миграции
 - 'python manage.py runserver' - запуск сервера
+
+Для работы проекта необходимо установить PostgreSQL и создать там необходимых пользователя и БД.
